@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace BCinema.Doman.Entities
+namespace BCinema.Domain.Entities
 {
     [Table("Vouchers")]
     public class Voucher : Base
@@ -11,9 +11,6 @@ namespace BCinema.Doman.Entities
 
         [Required]
         public int Discount { get; set; } = 0;
-
-        [Required]
-        public int Quantity { get; set; } = 0;
 
         public string? Description { get; set; }
 
